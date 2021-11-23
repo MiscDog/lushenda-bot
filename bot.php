@@ -49,12 +49,13 @@ $discord->on('message', static function (Message $message, Discord $discord) {
 				// Clean up uploaded zip
 				unlink($zipTempPath . ".zip");
 				recursiveRmdir($zipTempPath);
-
-				$message->delete();
 			}
 		} catch(\Error $e) {
 			$message->reply($e->getMessage());
 		}
+
+		// Delete the users message after an attempt
+		$message->delete();
 	}
 
 });
