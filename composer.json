@@ -1,0 +1,7 @@
+{
+    "name": "miscdog/lushenda-bot",
+    "require": {
+        "team-reflex/discord-php": "^5.1",
+		"ext-zip": "*"
+	}
+}

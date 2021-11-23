@@ -1,0 +1,17 @@
+/.idea
+
+
+/db/*
+/db/en/*
+!/db/en/
+!/db/en/.gitkeep
+/db/ja/*
+!/db/ja/
+!/db/ja/.gitkeep
+
+env.php
+
+/tmp/*
+!/tmp/.gitkeep
+
+/vendor/
