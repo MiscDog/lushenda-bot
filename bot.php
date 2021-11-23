@@ -4,12 +4,10 @@ use Discord\Discord;
 use Discord\Parts\Channel\Message;
 
 require __DIR__ . '/vendor/autoload.php';
-include('env.php');
+include_once(__DIR__ . '/env.php');
 
 const LOCAL_HEX_PATH = 'db';
 const LOCAL_HEX_DICT = LOCAL_HEX_PATH . '/local_hex_dict.csv';
-
-$test = $discordToken;
 
 $discord = new Discord([
 	'token' => $discordToken
