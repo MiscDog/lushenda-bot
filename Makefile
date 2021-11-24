@@ -6,5 +6,5 @@ build:
 	docker build . -t lushenda_bot
 
 run:
-	/usr/local/bin/docker-compose run lushenda_bot 2>&1 | tee -a notifier.log
+	/usr/local/bin/docker-compose run -d lushenda_bot 2>&1 | tee -a notifier.log
 	-docker container prune -f >/dev/null
