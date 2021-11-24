@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  lushenda_bot:
+    container_name: lushenda_bot
+    hostname: lushenda_bot
+    image: lushenda_bot
+    volumes:
+      - /opt/docker/docker-scripts/lushenda-bot/container_db:/app/db

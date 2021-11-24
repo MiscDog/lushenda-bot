@@ -8,6 +8,7 @@
 /db/ja/*
 !/db/ja/
 !/db/ja/.gitkeep
+/container_db/
 
 env.php
 
@@ -15,3 +16,5 @@ env.php
 !/tmp/.gitkeep
 
 /vendor/
+
+*.log
